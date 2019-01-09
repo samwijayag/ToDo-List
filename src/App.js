@@ -5,10 +5,10 @@ import Tododata from './todosData'
 
 const App = () =>
 {
-	const tododataitems = Tododata.map(item => <ToDoItems key={item.id} item={item} />)
+	const todolist = Tododata.map(item => <ToDoItems key={item.id} item={item} />)
 	return (
 		<div className='todo-list'>
-			{tododataitems}
+			{todolist}
 		</div>
 	)
 }
